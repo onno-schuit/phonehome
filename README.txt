@@ -6,5 +6,7 @@ The block Phonehome is standard off, because of all the data it creates. To put 
 
 The Phonehome block sends every period (default 60 seconds) an update to the database in which course the user is, so the time a user takes in a course can be tracked.
 
+In addition, the Phonehome block also sends an update upon a page refresh (or loading a new page). So, immediately after loading, the block phones home, and then every 60 seconds ever after.
+
 In the global configuration file, config.php, the period can be changed.
 Add or change the variable $CFG->phonehome_timer and give it the preferred value (in seconds);
